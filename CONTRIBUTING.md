@@ -1,0 +1,316 @@
+# 项目贡献记录 (CONTRIBUTING)
+
+本文档记录项目的开发时间线和每次贡献的内容。
+
+---
+
+## 2026-05-19 - 主观题自评功能
+
+针对简答题、填空题、论述题等主观题，新增用户自评机制。练习结束后，用户可对照标准答案滑动评分（0.0-1.0），避免严格字符串匹配误判。
+
+- StudentAnswer 模型新增 `self_grade` 列（Float, nullable）
+- 新增 `POST /answers/{id}/self-grade` 和 `POST /sessions/{id}/self-grade` API 端点
+- PracticePage 结果阶段新增自评面板：逐题展示用户答案 vs 标准答案 + 滑块评分
+- 主观题跳过客户端严格对比，`is_correct` 统一提交 `false`，等待用户自评
+
+---
+
+## 2026-05-19 - 视频图表工具集成（思维导图/流程图/甘特图 + ECharts 图表 + JSON 容错）
+
+为视频生成 agent 封装了绘图工具集（思维导图/流程图/甘特图），LLM 可在章节数据中自动选择图表类型。引入 ECharts 渲染柱状图/折线图/饼图/环形图到 Canvas，新增时间线/里程碑可视化。目前支持 icon_text/image/table/bar_chart/line_chart/pie_chart/donut_chart/timeline/mindmap/flowchart/gantt 共 11 种视觉类型。
+
+修复了 PRESENTATION_TEMPLATE 中 ECharts resize JavaScript 未转义 `{}` 导致 `format()` 崩溃的问题（`setTimeout(function(){` 中 `{` 被当成 format 占位符）。同时增加 `_clean_json_output()` 容错处理和 LLM 重试机制。
+
+---
+
+## 2026-05-18 - Unsplash 官方图片搜索 + MCP 工具
+
+替换废弃的 source.unsplash.com，集成官方 Unsplash API。创建 MCP 搜索工具供 Claude 搜索配图，前端 API 设置页面支持配置 Unsplash Access Key。
+
+---
+
+## 2026-05-17 - Draw.io 图表编辑器集成
+
+将 draw.io 编辑器嵌入 AI 对话中。AI 可以 [DRAWIO] 标记输出图表 XML，前端自动解析并加载到编辑器面板，支持历史图表回看和手动开关。
+
+---
+
+## 2026-05-16 - 多项功能
+
+- **知识掌握度/易错点层级化**：从扁平列表改为按 学科→章节→知识点 三级展示
+- **错题本 + 测试历史 + 练习统计**：答题记录持久化，支持错题重练、d3 每日统计图表
+- **云盘增强**：文件预览（Word/PPT/图片/PDF）、TipTap 富文本编辑器、文件缩略图、PPT 生成
+- **答题后自动更新画像**：随学随新，无需手动操作
+
+---
+
+## 2026-05-12 - RAG 系统 + 文件格式兼容
+
+PPT/Word 文档解析支持上传和自动分块索引。RAG 参考来源在 AI 回复底部展示（文档名+相关度+片段）。旧版 Office 格式 (.ppt/.doc) 上传友好提示。前端文件选择器移除 accept 属性，改为 JS 校验（Windows 兼容性修复）。
+
+---
+
+## 2026-05-10 - 多项功能
+
+- **联网搜索**：集成阿里云百炼 MCP WebSearch，AI 可结合实时网络信息回答
+- **OCR 图片文字识别**：集成百度 OCR，纯文本模型也能理解图片内容
+- **剪贴板粘贴**：支持粘贴图片/PDF，多模态模型直传，纯文本模型 OCR
+- **API 设置 + 模型可用性检查**：用户可配置 API Key，灰色显示不可用模型
+
+---
+
+## 2026-05-09 - 前端修复与后端强化
+
+深度思考内容保留、删除确认、导航栏调整、固定返回按钮、登录错误优化。PostgreSQL 强制检查（启动时验证）。API 文档页面 React 重写替代 HTML。账号从标记删除改为物理删除。
+
+---
+
+## 2026-05-09 - LLM 集成 + AI Chat + RAG 项目系统
+
+集成 DeepSeek API 实现 AI 智能对话（SSE 流式输出）。实现项目管理系统（CRUD+提示词+RAG 文档），FAISS 混合检索（向量+关键词），集成到 AI Chat 中作为项目面板。支持按项目筛选对话、新建/编辑/删除项目。
+
+---
+
+## 2026-05-08 - 前端 React/TypeScript 重构 + 画像数据库层
+
+从静态 HTML 完全重构为 React 18 + TypeScript + Vite。实现 8 维学习画像的数据库层（Neo4j/MongoDB/PostgreSQL）和 API。整理测试脚本到 test_script/ 目录。
+
+---
+
+## 2026-05-07 - 项目初始化
+
+创建 FastAPI 后端项目，实现用户认证系统（注册/登录/JWT/登录锁定）、用户角色系统（student/admin）、8 维学习画像设计、多数据库配置（PostgreSQL/Redis/Neo4j/MongoDB）、迁移脚本和 PRD 文档。
+
+---
+
+## 当前实现状态
+
+### 已完成功能
+- 用户认证系统（注册/登录/JWT/登录失败锁定）
+- 8 维学习画像（Neo4j + MongoDB）
+- AI 对话（DeepSeek API + SSE 流式输出）
+- 题库系统（按学科→章节→知识点组织）
+- 错题本 + 测试历史 + 练习统计
+- 项目管理系统（CRUD + RAG）
+- 联网搜索（阿里云百炼 MCP）
+- OCR 文字识别（百度 OCR）
+- Draw.io 图表编辑器
+- AI 视频演示生成（11 种视觉类型：ECharts/时间线/思维导图/流程图/甘特图等）
+- 云盘系统（文件预览/缩略图/富文本编辑器/PPT 生成）
+- Unsplash 官方图片集成 + MCP 工具
+- **学习路径规划系统**：Neo4j 知识图谱 DAG 规划 + 加权评分 + 深度层级布局 + ReactFlow 可视化（真实 PREREQUISITE/RELATED_TO 依赖边 + dagre 自动布局 + 双模式降级）
+
+### 规划中
+- LangGraph ProfileInitAgent / ProfileUpdateAgent / ExplainabilityAgent
+- EventTracker 自动埋点
+
+---
+
+## 项目规范
+- 用户提示信息为中文；所有页面有固定返回首页按钮；空数据引导至初始化流程
+- 所有 API 带 JWT 认证（除注册/登录）；列表接口支持分页
+- Docker 部署（backend:8000, frontend:3000, PostgreSQL:5432, Redis:6379, Neo4j:7687, MongoDB:27017）
+- 文件格式兼容 .pdf/.pptx/.ppt/.docx/.doc（前端 JS 校验，不依赖 accept 属性）
+- 修改代码后检查 README/CONTRIBUTING/.env 一致性；README 确保零基础配置
+- 新增 Python 依赖后立即更新 requirements.txt，不允许遗漏
+
+## 分支管理
+- `main` - 主分支，稳定版本
+- `feature/*` - 功能分支
+
+---
+
+## 2026-05-24 - 学习路径规划系统改进（Phase 1：统一路径数据源）
+
+修复了前端 KnowledgeGraph（ReactFlow DAG 图谱）使用假边（按领域顺序连接）的问题，改为消费后端 PathPlanner 从 Neo4j 提取的真实 PREREQUISITE/RELATED_TO 依赖关系。
+
+### 后端变更
+- `app/schemas/question_bank.py`：新增 DagNode、DagEdge、DagData Pydantic 模型；LearningPathMarkdownResponse 增加 dag_data 字段
+- `app/api/endpoints/path.py`：GET /path/current 调用 PathPlanner.plan()，返回 dag_data 字段（Neo4j 不可用时静默降级）
+- `app/services/path_planner.py`：新增加权评分函数（w1=0.4 掌握度差距 / w2=0.25 重要度 / w3=0.2 考察频率 / w4=0.15 认知负荷）；新增深度层级布局（多列替代单列）；新增 domain_name/subject_name 元数据传递；安全异常处理
+
+### 前端变更
+- `package.json`：新增 @dagrejs/dagre 依赖
+- `frontend/src/api/path.ts`：新增 DagNode/DagEdge/DagData 类型定义
+- `frontend/src/components/KnowledgeGraph.tsx`：重构为双模式—有 DAG 数据时使用 dagre 自动布局 + PREREQUISITE 边（蓝色实线带动画箭头）/ RELATED_TO 边（灰色虚线），无 DAG 数据时降级为领域分组排列
+- `frontend/src/pages/LearningPathPage.tsx`：传递 dagData 给 KnowledgeGraph
+
+### PRD 更新
+- prd-7: LP-2 增强记录
+- prd-8: FE-01 dagre布局 + 真实依赖边
+- prd-9: BE-04 加权评分 + 深度布局；BE-05 dag_data 字段
+
+---
+
+## 2026-05-24 - 掌握度虚涨问题修复
+
+修复了动态画像中整体掌握度持续上涨（虚高）的问题。共有 4 个根因：
+
+### 根因分析
+
+1. **新记录默认 50% 起步**：KnowledgePointRecord 新建时 `mastery_score=50`，答对 1 题立即跳到 80%
+2. **复习次数加成脱离表现**：`study_count * 2` 无条件加 10 分，只看学习次数不看答题表现
+3. **首次答题 recent_accuracy = 100**：第 1 题答对 → 100% 正确率 → 50 + 30 = 80 分
+4. **Neo4j 独立 +/- delta 不同步**：Neo4j 用 `+0.05/-0.10` 独立于 PostgreSQL 计算，67% 以上正确率就持续上涨，置信度无论对错都 +0.02
+
+### 后端变更
+
+- `app/services/mastery_calculator.py`：
+  - 新增**低样本惩罚**（`total_practiced < 3` 时 -30 分），防止 1 对 0 错 = 80 分
+  - 复习次数加成改为**表现门控**（仅 `overall_acc >= 60%` 时生效），上限从 10 降至 5 分
+- `app/api/endpoints/question_bank.py`：
+  - 新建 `KnowledgePointRecord` 默认 `mastery_score=0`（原 50）
+  - 首次答题 `recent_accuracy` 从 100 降至 **60**（保守估计）
+  - 移除 Neo4j 独立 +/- delta 更新，改为**同步 PostgreSQL 综合计算结果**（`calculate_mastery() / 100`）
+  - 置信度改为基于**练习量**（`total_practiced / 20`），不再无条件增长
+
+### 效果
+
+| 场景 | 改前 | 改后 |
+|------|------|------|
+| 答对 1 题（无历史） | 掌握度 80% | 掌握度 20% |
+| 答对 5 题全对 | 掌握度 80 → 90% | 掌握度 80% |
+| 答对 3/5 题（60%） | 掌握度 ~60% | 掌握度 ~50% |
+| 答错 3 题连续 | 掌握度 60% | 掌握度 ~15%（含连错 -15） |
+| 复习 5 次但 0 对 | +10 分 | +0 分（正确率 < 60%） |
+| Neo4j 置信度 | 每答必涨 +0.02 | 基于练习量 /20 |
+
+---
+
+## 2026-05-24 - AI 出题速度优化
+
+将 AI 出题模型从 `deepseek-chat` 切换到 `deepseek-v4-flash`（单题重生成已用该模型验证可用），同时降低提示词体积和超时时间。
+
+### 优化项
+- **模型切换**：`deepseek-chat` → `deepseek-v4-flash`，LLM 推理速度大幅提升
+- **max_tokens 降低**：16384 → 4096，减少 LLM 输出长度预期
+- **已有题目上下文**：200 条 → **30 条**，提示词体积降低 85%
+- **超时缩短**：300s → 120s，快速失败不再让用户空等
+
+### 涉及文件
+- `app/api/endpoints/question_bank.py`：`_call_llm_for_questions`、`_call_llm_stream`、`_get_existing_questions_context`
+
+---
+
+## 2026-05-24 - AI 出题对话持久化修复
+
+修复 AI 出题助手对话框重新打开后，历史消息和生成的题目消失的问题。
+
+### Bug 分析
+
+1. **`cleanAIMessage` 把整条回复清空了**：当 LLM 回复只有 `[[GENERATE]]\n{...}` 时，`content.substring(0, idx)` 返回空字符串
+2. **`generatedQuestions` 不持久化**：Redis 只存了 `history` + `params`，没有存 `generated_questions`，重新打开后预览面板消失
+3. **单题 JSON 解析失败**：LLM 有时输出单对象 `{...}` 而非数组 `[{...}]`，后端只搜 `[` 导致 0 题
+
+### 后端变更
+
+- `app/api/endpoints/question_bank.py`：
+  - `AIContextResponse` 新增 `generated_questions` 字段
+  - `_save_ai_context()` / `_load_ai_context()` 增加 `generated_questions` 参数
+  - 流式/非流式端点在保存上下文时传入 `generated_questions`
+  - 新增 `_parse_generated_questions()` 工具函数，同时兼容 `[{...}]` 数组和 `{...}` 单对象两种 LLM 输出格式
+  - 流式/非流式端点均改用 `_parse_generated_questions()` 解析
+
+### 前端变更
+
+- `frontend/src/pages/BankDetailPage.tsx`：
+  - init 恢复对话时清理 `[[GENERATE]]` 标记，空消息自动替换为 "✅ 已生成 X 道题目"
+  - 恢复 `generatedQuestions` 状态，使预览面板重新显示
+  - 渲染层增加空消息兜底文字
+- `frontend/src/api/questionBank.ts`：`getAIContext` 响应类型增加 `generated_questions` 字段
+
+---
+
+## 2026-05-24 - AI 出题重复保存修复
+
+修复 AI 出题助手保存题目后重新打开对话框，仍显示旧题目的"保存选中"按钮，可能导致重复保存的问题。
+
+### Bug 分析
+
+`handleSaveSelected` 保存题目到题库后调用 `onSaved()` 关闭弹窗，但没有清除 Redis 中的 AI 上下文。用户重新打开对话框时，`getAIContext` 返回旧 `generated_questions`，前端恢复这些题目到预览面板，用户再次点击"保存选中"即产生重复题目。
+
+### 修复
+
+- `frontend/src/pages/BankDetailPage.tsx`：`handleSaveSelected` 保存成功后调用 `questionBankApi.clearAIContext(bankId)` 清除 Redis 上下文。使用 fire-and-forget（`.catch(() => {})`）不阻塞弹窗关闭。
+
+---
+
+## 2026-05-24 - 跨学科薄弱点推荐污染修复
+
+修复了练习时推荐系统展示其他学科薄弱知识点的问题。例如在 fastapi 题库连续答错时，出现"离散数学中的群没学好"的提示。
+
+### Bug 分析
+
+`PracticeRecommendPopup` 调用 `GET /recommend` 和 `GET /path/agent/recommend` 时未传递学科范围，后端返回所有学科的薄弱点推荐。练习时出现跨学科提示，干扰用户体验。
+
+同时 `_ensure_knowledge_points` 未校验已有 UUID 是否属于当前学科，AI 出题可能引用其他学科的知识点。
+
+### 后端变更
+
+- `app/services/resource_recommender.py`：`get_all_recommendations()` 和 `_weak_point_recommendations()` 新增 `subject_id` 参数，非空时通过 `KnowledgePointRecord → KnowledgePoint → KnowledgeDomain` 连接过滤只返回目标学科的薄弱点
+- `app/services/learning_agent.py`：`get_recommendations()` 新增 `subject_id` 参数，同样过滤
+- `app/api/endpoints/recommend.py`：`GET /recommend` 和 `/recommend/weak-points` 新增可选 `subject_id` Query 参数
+- `app/api/endpoints/path.py`：`GET /path/agent/recommend` 新增可选 `subject_id` Query 参数
+- `app/api/endpoints/question_bank.py`：`_ensure_knowledge_points` 增加已有 UUID 的学科归属校验（`KnowledgePoint → KnowledgeDomain.subject_id`），不匹配的 UUID 自动丢弃
+
+### 前端变更
+
+- `frontend/src/pages/PracticePage.tsx`：新增 `subjectId` 状态，加载题库时从 `bank.subject_id` 获取，传递给 `PracticeRecommendPopup`
+- `frontend/src/components/PracticeRecommendPopup.tsx`：接收 `subjectId` prop，API 请求时携带 `subject_id` 参数
+- `frontend/src/api/recommend.ts` / `path.ts`：`getAll()` / `getAgentRecommendations()` 新增可选 `params` 参数
+- `frontend/src/pages/SubjectLearningPage.tsx`：`recommendApi.getAll()` 调用时传入 `subject_id`
+
+---
+
+## 2026-05-24 - AI 出题助手对话持久化修复（LLM 多对象 JSON 解析）
+
+修复 AI 出题助手生成的题目在退出对话框后未能恢复的问题。
+
+### Bug 分析
+
+`_parse_generated_questions()` 函数只能解析标准数组 `[{...}]` 和单对象 `{...}` 格式，但 LLM 实际输出的是流式多对象格式：
+
+```
+[[GENERATE]]
+{...第一题...}
+{...第二题...}
+```
+
+该格式无外层数组。原解析器先查找 `[`，但第一个 `[` 是题目中 `options` 数组的起始，导致 `arr_start` 指向选项数组内部而非外层，`json.loads` 报 `Extra data` 错误。回退到单对象解析时 `{...}{...}` 也不是合法 JSON。最终返回 `[]`，空列表被保存到 Redis，重新打开对话框时无题目可恢复。
+
+### 修复
+
+- `app/api/endpoints/question_bank.py`：`_parse_generated_questions()` 新增流式多对象分割步骤，用正则 `}\s*\n\s*{` 拆分为独立 JSON 分别解析。同时增加 `json.JSONDecoder.raw_decode()` 逐段解析作为兜底。
+
+### 验证
+
+```
+第一次 getAIContext: has_context=True, questions=2
+第二次 getAIContext: has_context=True, questions=2  ✅
+```
+
+---
+
+## 2026-05-24 - AI 出题助手保存后对话恢复修复
+
+修复 AI 出题生成题目后，点击"保存选中"按钮无响应、对话框不会自动回到对话界面的问题。
+
+### Bug 分析
+
+前次修复在 `handleSaveSelected` 中移除了 `onSaved()`（关闭弹窗+刷新题库）和 `clearAIContext()`，替换为 `savedQuestionIds` 状态追踪。但未触发任何可见的 UI 变化——预览面板和保存按钮保持不动，用户点击保存后看不到任何反馈。
+
+### 修复
+
+- `frontend/src/pages/BankDetailPage.tsx`：
+  - `handleSaveSelected`：保存成功后，自动将全部题目索引通过 `updateSavedQuestions` 写入上下文；清空 `generatedQuestions` / `selectedQuestions` / `savedQuestionIds` 隐藏预览面板；在消息列表追加一条成功提示 `"✅ 已成功保存 N 道题目到题库"`，用户可继续出题或关闭
+  - Init effect：检测到 `saved_indices` 覆盖全部生成题目时，不恢复预览面板（`setGeneratedQuestions([])`），避免重新打开后仍显示保存按钮
+- `app/api/endpoints/question_bank.py`：新增 `POST /banks/{bank_id}/ai-context/saved-questions` 端点，将已保存索引持久化到上下文 params
+
+### 流程
+
+```
+生成题目 → 预览面板显示保存按钮 → 点击保存 → 题目入库
+→ 预览面板收起 → 成功消息出现在对话中 → 上下文保留
+→ 关闭并重新打开 → 对话记录可见，预览面板不出现（已保存）
+```
+```

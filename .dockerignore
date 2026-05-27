@@ -1,0 +1,56 @@
+venv/
+__pycache__/
+*.pyc
+.env
+.git/
+.gitignore
+README.md
+CONTRIBUTING.md
+CLAUDE.md
+AGENTS.md
+request/
+test_script/
+migrations/
+transition/
+uploads/*
+!uploads/.gitkeep
+
+# Claude Code
+.claude/
+
+# Playwright MCP
+.playwright-mcp/
+
+# Playwright test artifacts
+test-results/
+frontend/test-results/
+login.json
+
+# Screenshots
+*.png
+*.jpg
+*.jpeg
+
+# Runtime data
+data/
+
+# Root-level node_modules
+node_modules/
+
+# Root-level npm artifacts
+package.json
+package-lock.json
+
+# Test recordings & scripts
+login-page.yml
+practice-page-full.yml
+test_new_pages.spec.ts
+test_video_*.py
+
+# Personal reference
+CLAUDE_GUIDE.md
+
+# Frontend (handled by Docker build)
+frontend/node_modules/
+frontend/.vite/
+frontend/.turbo/
