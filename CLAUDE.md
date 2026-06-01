@@ -16,7 +16,10 @@
 - **Redis**: 6379 端口
 - **Neo4j**: 7687 端口
 - **MongoDB**: 27017 端口
-- 修改代码后需要重启容器才会生效：`docker-compose restart backend` 或 `docker-compose restart frontend`
+- **后端代码修改后**：`docker-compose restart backend`（app 目录已挂载，重启即可）
+- **前端源码修改后**：`cd frontend && npm run build`（dist 已挂载，Nginx 自动加载新文件，无需重启容器）
+- **Dockerfile.frontend / nginx.conf 修改后**：`docker-compose build frontend && docker-compose restart frontend`
+- **首次克隆项目时**：先执行 `cd frontend && npm install && npm run build` 生成 dist 目录，再启动 Docker
 
 ### 7.11 文件格式兼容
 - 所有 Office 格式必须兼容：`.pdf`、`.pptx`、`.ppt`、`.docx`、`.doc`（.doc 和 .ppt 为旧版格式，无法解析文本但支持上传）
