@@ -1,0 +1,130 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+
+# Virtual Environment
+venv/
+.venv/
+env/
+.env
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# Database
+*.db
+*.db-journal
+_test_verify.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+*.log.*
+
+# Uploaded files
+uploads/
+
+# Runtime data (videos, audio, etc.)
+data/
+
+# Root-level test scripts
+test_video_*.py
+
+# Playwright test recordings
+login-page.yml
+practice-page-full.yml
+
+# Root node_modules (local testing only)
+node_modules/
+
+# Root-level npm artifacts (not project source)
+/package.json
+/package-lock.json
+
+# Transition documents (AI agent handover, not for repo)
+transition/
+
+# Coverage
+htmlcov/
+.coverage
+.coverage.*
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.turbo/
+frontend/vite.config.ts.timestamp-*.mjs
+
+# Question Frontend
+question-frontend/
+
+# Test scripts (local testing only, not for remote repo)
+test_script/
+
+# Alembic
+migrations/versions/
+*.tar
+
+# Claude Code
+.claude/
+AGENTS.md
+
+# Playwright MCP
+.playwright-mcp/
+
+# Temporary generated files
+tmp_openapi.json
+
+# Generated output data (regenerable from scripts)
+output/
+
+# Large binary source documents
+*.pdf
+
+# Local utility scripts
+count_lines.py
+
+# Frontend debug artifacts
+frontend/debug_built.js
+
+# Playwright test artifacts
+test-results/
+frontend/test-results/
+login.json
+
+# Claude guides
+CLAUDE_GUIDE.md
+
+# Root-level test scripts
+test_new_pages.spec.ts
+
+# Screenshots
+*.png
+*.jpg
+*.jpeg

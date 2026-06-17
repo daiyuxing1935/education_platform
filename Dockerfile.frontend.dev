@@ -1,0 +1,13 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+COPY package.json package-lock.json ./
+RUN npm config set registry https://registry.npmmirror.com && npm ci
+
+# Copy Monaco Editor to public directory for local loading (avoids CDN)
+RUN mkdir -p /app/public/monaco-editor/min && cp -r /app/node_modules/monaco-editor/min/vs /app/public/monaco-editor/min/vs
+
+COPY . .
+
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]

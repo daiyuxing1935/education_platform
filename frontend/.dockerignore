@@ -1,0 +1,8 @@
+node_modules/
+.vite/
+.turbo/
+dist/
+.git/
+.gitignore
+*.md
+*.log

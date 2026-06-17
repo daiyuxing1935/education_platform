@@ -1,0 +1,3859 @@
+{
+  "subject": {
+    "id": "d91a4645-ab5f-4819-8379-d9e6524f0937",
+    "name": "数据结构",
+    "description": null,
+    "sort_order": 0,
+    "created_at": "2026-06-16T06:16:33.93543",
+    "updated_at": "2026-06-16T06:16:33.935436"
+  },
+  "domains": [
+    {
+      "id": "5c8ee205-1c4e-4afe-8192-9c47ee6b85d4",
+      "subject_id": "d91a4645-ab5f-4819-8379-d9e6524f0937",
+      "name": "绪论",
+      "description": null,
+      "sort_order": 1,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "50abd330-89f5-45e8-b03c-2bf87407a69e",
+      "subject_id": "d91a4645-ab5f-4819-8379-d9e6524f0937",
+      "name": "线性表",
+      "description": null,
+      "sort_order": 2,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "60b50b4a-e1b6-4101-bd89-9be7746d7fe1",
+      "subject_id": "d91a4645-ab5f-4819-8379-d9e6524f0937",
+      "name": "栈和队列",
+      "description": null,
+      "sort_order": 3,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "fc2ab5e2-67ca-4926-988a-ee39a64aff9c",
+      "subject_id": "d91a4645-ab5f-4819-8379-d9e6524f0937",
+      "name": "树和二叉树",
+      "description": null,
+      "sort_order": 4,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "fe71932d-9e52-4971-84b2-b4026117ecf0",
+      "subject_id": "d91a4645-ab5f-4819-8379-d9e6524f0937",
+      "name": "图",
+      "description": null,
+      "sort_order": 5,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "439f18bb-5eee-48b5-a627-a19b4e1e020f",
+      "subject_id": "d91a4645-ab5f-4819-8379-d9e6524f0937",
+      "name": "查找",
+      "description": null,
+      "sort_order": 6,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "7c9e0f2f-39bc-47ea-9b4c-f9bfd2e518bf",
+      "subject_id": "d91a4645-ab5f-4819-8379-d9e6524f0937",
+      "name": "排序",
+      "description": null,
+      "sort_order": 7,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    }
+  ],
+  "knowledge_points": [
+    {
+      "id": "2864a4f2-b963-43f8-9197-9f75fcb92a23",
+      "domain_id": "fc2ab5e2-67ca-4926-988a-ee39a64aff9c",
+      "name": "二叉树定义",
+      "description": "树和二叉树 - 二叉树定义",
+      "video_url": null,
+      "difficulty": 1,
+      "sort_order": 1,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "ee555b40-a571-4723-8808-6df9673f9f2c",
+      "domain_id": "5c8ee205-1c4e-4afe-8192-9c47ee6b85d4",
+      "name": "数据结构基本概念",
+      "description": "绪论 - 数据结构基本概念",
+      "video_url": null,
+      "difficulty": 1,
+      "sort_order": 1,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "9e65e0ca-96f3-4a75-b991-f31bd4db1b59",
+      "domain_id": "fe71932d-9e52-4971-84b2-b4026117ecf0",
+      "name": "图的定义",
+      "description": "图 - 图的定义",
+      "video_url": null,
+      "difficulty": 1,
+      "sort_order": 1,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "d26a8142-aae4-4a2a-91a3-ec47ced34fb2",
+      "domain_id": "7c9e0f2f-39bc-47ea-9b4c-f9bfd2e518bf",
+      "name": "直接插入排序",
+      "description": "排序 - 直接插入排序",
+      "video_url": null,
+      "difficulty": 2,
+      "sort_order": 1,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "84a83d44-599c-473b-9065-3b402ddb2ea0",
+      "domain_id": "60b50b4a-e1b6-4101-bd89-9be7746d7fe1",
+      "name": "栈的定义",
+      "description": "栈和队列 - 栈的定义",
+      "video_url": null,
+      "difficulty": 1,
+      "sort_order": 1,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "f5aae3af-3be6-4dbc-ab36-52132cc60968",
+      "domain_id": "50abd330-89f5-45e8-b03c-2bf87407a69e",
+      "name": "线性表定义",
+      "description": "线性表 - 线性表定义",
+      "video_url": null,
+      "difficulty": 1,
+      "sort_order": 1,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "225c9b6b-9450-4ed2-b067-10093a6a3710",
+      "domain_id": "439f18bb-5eee-48b5-a627-a19b4e1e020f",
+      "name": "顺序查找",
+      "description": "查找 - 顺序查找",
+      "video_url": null,
+      "difficulty": 1,
+      "sort_order": 1,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "f71ca4ae-81dc-4cb9-96be-cdf110ffb44b",
+      "domain_id": "fc2ab5e2-67ca-4926-988a-ee39a64aff9c",
+      "name": "二叉树遍历",
+      "description": "树和二叉树 - 二叉树遍历",
+      "video_url": null,
+      "difficulty": 2,
+      "sort_order": 2,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "07fa514b-5ada-41c3-b8ca-0150fde8760a",
+      "domain_id": "50abd330-89f5-45e8-b03c-2bf87407a69e",
+      "name": "顺序表实现",
+      "description": "线性表 - 顺序表实现",
+      "video_url": null,
+      "difficulty": 1,
+      "sort_order": 2,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "a23b8382-1b9d-4b1c-a70f-872971c8bdbb",
+      "domain_id": "439f18bb-5eee-48b5-a627-a19b4e1e020f",
+      "name": "折半查找",
+      "description": "查找 - 折半查找",
+      "video_url": null,
+      "difficulty": 2,
+      "sort_order": 2,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "b42a9684-0b33-472e-ad57-37aaef36d9f1",
+      "domain_id": "60b50b4a-e1b6-4101-bd89-9be7746d7fe1",
+      "name": "顺序栈",
+      "description": "栈和队列 - 顺序栈",
+      "video_url": null,
+      "difficulty": 1,
+      "sort_order": 2,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "1ab2aefc-3ee4-487e-8ebd-9366f9bf0969",
+      "domain_id": "fe71932d-9e52-4971-84b2-b4026117ecf0",
+      "name": "邻接矩阵",
+      "description": "图 - 邻接矩阵",
+      "video_url": null,
+      "difficulty": 2,
+      "sort_order": 2,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "74c17a38-40ed-4ef2-83a1-04fe4984be78",
+      "domain_id": "5c8ee205-1c4e-4afe-8192-9c47ee6b85d4",
+      "name": "算法时间复杂度",
+      "description": "绪论 - 算法时间复杂度",
+      "video_url": null,
+      "difficulty": 2,
+      "sort_order": 2,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "e2e2d122-05d7-4125-9114-bdb791cf3b42",
+      "domain_id": "7c9e0f2f-39bc-47ea-9b4c-f9bfd2e518bf",
+      "name": "希尔排序",
+      "description": "排序 - 希尔排序",
+      "video_url": null,
+      "difficulty": 3,
+      "sort_order": 2,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "a3263e9b-29dc-462b-8dee-891759068fb9",
+      "domain_id": "fe71932d-9e52-4971-84b2-b4026117ecf0",
+      "name": "邻接表",
+      "description": "图 - 邻接表",
+      "video_url": null,
+      "difficulty": 2,
+      "sort_order": 3,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "f5b956db-72db-4baa-a972-1686ac4641ae",
+      "domain_id": "5c8ee205-1c4e-4afe-8192-9c47ee6b85d4",
+      "name": "算法空间复杂度",
+      "description": "绪论 - 算法空间复杂度",
+      "video_url": null,
+      "difficulty": 2,
+      "sort_order": 3,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "f39d1e49-c71b-4c6f-9b4e-1675ced23488",
+      "domain_id": "50abd330-89f5-45e8-b03c-2bf87407a69e",
+      "name": "顺序表操作",
+      "description": "线性表 - 顺序表操作",
+      "video_url": null,
+      "difficulty": 2,
+      "sort_order": 3,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "b1fa8cfa-5876-4bf4-93ed-9d88727bb2d7",
+      "domain_id": "60b50b4a-e1b6-4101-bd89-9be7746d7fe1",
+      "name": "栈的应用",
+      "description": "栈和队列 - 栈的应用",
+      "video_url": null,
+      "difficulty": 3,
+      "sort_order": 3,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "0f3539cf-2872-4e97-b51c-2c9dea96aa52",
+      "domain_id": "fc2ab5e2-67ca-4926-988a-ee39a64aff9c",
+      "name": "线索二叉树",
+      "description": "树和二叉树 - 线索二叉树",
+      "video_url": null,
+      "difficulty": 3,
+      "sort_order": 3,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "aac8045b-c64d-4673-a078-806b21826764",
+      "domain_id": "439f18bb-5eee-48b5-a627-a19b4e1e020f",
+      "name": "BST",
+      "description": "查找 - BST",
+      "video_url": null,
+      "difficulty": 2,
+      "sort_order": 3,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "2ac652a7-7021-4477-ae5c-3a638821ab33",
+      "domain_id": "7c9e0f2f-39bc-47ea-9b4c-f9bfd2e518bf",
+      "name": "冒泡排序",
+      "description": "排序 - 冒泡排序",
+      "video_url": null,
+      "difficulty": 2,
+      "sort_order": 3,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "fcf07533-1b26-4219-baa1-a595dbfb2810",
+      "domain_id": "60b50b4a-e1b6-4101-bd89-9be7746d7fe1",
+      "name": "队列定义",
+      "description": "栈和队列 - 队列定义",
+      "video_url": null,
+      "difficulty": 1,
+      "sort_order": 4,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "c313b28d-6f41-496b-b63a-c0ccfb6753f7",
+      "domain_id": "439f18bb-5eee-48b5-a627-a19b4e1e020f",
+      "name": "AVL",
+      "description": "查找 - AVL",
+      "video_url": null,
+      "difficulty": 4,
+      "sort_order": 4,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "29eb66fb-ddd4-4e8c-9c53-b7590eddae81",
+      "domain_id": "fc2ab5e2-67ca-4926-988a-ee39a64aff9c",
+      "name": "哈夫曼树",
+      "description": "树和二叉树 - 哈夫曼树",
+      "video_url": null,
+      "difficulty": 3,
+      "sort_order": 4,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "e5cbaffa-999e-47f8-8ede-0382e006030e",
+      "domain_id": "7c9e0f2f-39bc-47ea-9b4c-f9bfd2e518bf",
+      "name": "快速排序",
+      "description": "排序 - 快速排序",
+      "video_url": null,
+      "difficulty": 3,
+      "sort_order": 4,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "4b9a893a-a7d3-4c37-8121-63da4fe3e9ea",
+      "domain_id": "50abd330-89f5-45e8-b03c-2bf87407a69e",
+      "name": "单链表",
+      "description": "线性表 - 单链表",
+      "video_url": null,
+      "difficulty": 2,
+      "sort_order": 4,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "cfd62235-359a-494f-a708-78c0bbfb837f",
+      "domain_id": "fe71932d-9e52-4971-84b2-b4026117ecf0",
+      "name": "DFS",
+      "description": "图 - DFS",
+      "video_url": null,
+      "difficulty": 2,
+      "sort_order": 4,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "199d9352-4516-4a78-8bdd-16812a027c09",
+      "domain_id": "439f18bb-5eee-48b5-a627-a19b4e1e020f",
+      "name": "B树",
+      "description": "查找 - B树",
+      "video_url": null,
+      "difficulty": 4,
+      "sort_order": 5,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "03d2d2f2-ef1c-4844-9959-23d1464c7930",
+      "domain_id": "60b50b4a-e1b6-4101-bd89-9be7746d7fe1",
+      "name": "循环队列",
+      "description": "栈和队列 - 循环队列",
+      "video_url": null,
+      "difficulty": 2,
+      "sort_order": 5,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "b0983f1d-b957-45c4-b189-c43136645d9e",
+      "domain_id": "fe71932d-9e52-4971-84b2-b4026117ecf0",
+      "name": "BFS",
+      "description": "图 - BFS",
+      "video_url": null,
+      "difficulty": 2,
+      "sort_order": 5,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "e9eda9d1-ff3e-4bf1-aaa8-56ea4a40259f",
+      "domain_id": "50abd330-89f5-45e8-b03c-2bf87407a69e",
+      "name": "双链表",
+      "description": "线性表 - 双链表",
+      "video_url": null,
+      "difficulty": 3,
+      "sort_order": 5,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "306c34b3-178a-4298-a7d2-c8cbe1266623",
+      "domain_id": "7c9e0f2f-39bc-47ea-9b4c-f9bfd2e518bf",
+      "name": "简单选择排序",
+      "description": "排序 - 简单选择排序",
+      "video_url": null,
+      "difficulty": 2,
+      "sort_order": 5,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "28f77951-e03f-4b44-ba0a-80651a645cd0",
+      "domain_id": "fe71932d-9e52-4971-84b2-b4026117ecf0",
+      "name": "最小生成树",
+      "description": "图 - 最小生成树",
+      "video_url": null,
+      "difficulty": 3,
+      "sort_order": 6,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "542df249-1c7b-4b6f-8329-443b74c22137",
+      "domain_id": "439f18bb-5eee-48b5-a627-a19b4e1e020f",
+      "name": "哈希表",
+      "description": "查找 - 哈希表",
+      "video_url": null,
+      "difficulty": 3,
+      "sort_order": 6,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "fba2dedb-9e8f-40e9-9a13-a0b68ddcfe53",
+      "domain_id": "7c9e0f2f-39bc-47ea-9b4c-f9bfd2e518bf",
+      "name": "堆排序",
+      "description": "排序 - 堆排序",
+      "video_url": null,
+      "difficulty": 4,
+      "sort_order": 6,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "1fea8d3b-f489-402f-9869-a4dddec3b5cd",
+      "domain_id": "7c9e0f2f-39bc-47ea-9b4c-f9bfd2e518bf",
+      "name": "归并排序",
+      "description": "排序 - 归并排序",
+      "video_url": null,
+      "difficulty": 3,
+      "sort_order": 7,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "4acdd09d-73e6-4db7-80c5-d992f5e44b6a",
+      "domain_id": "fe71932d-9e52-4971-84b2-b4026117ecf0",
+      "name": "Dijkstra",
+      "description": "图 - Dijkstra",
+      "video_url": null,
+      "difficulty": 4,
+      "sort_order": 7,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "5ac3d084-2d95-4b0c-8321-e225c4d5e44f",
+      "domain_id": "fe71932d-9e52-4971-84b2-b4026117ecf0",
+      "name": "拓扑排序",
+      "description": "图 - 拓扑排序",
+      "video_url": null,
+      "difficulty": 3,
+      "sort_order": 8,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    },
+    {
+      "id": "65eb94f2-b2e5-4f6a-8a03-29489c9525b3",
+      "domain_id": "fe71932d-9e52-4971-84b2-b4026117ecf0",
+      "name": "关键路径",
+      "description": "图 - 关键路径",
+      "video_url": null,
+      "difficulty": 4,
+      "sort_order": 9,
+      "created_at": "2026-06-16T06:52:35.876732",
+      "updated_at": "2026-06-16T06:52:35.876732"
+    }
+  ],
+  "bank": {
+    "id": "2ce6ee7d-ed5a-42a1-8a26-6ad6856afd3e",
+    "subject_id": "d91a4645-ab5f-4819-8379-d9e6524f0937",
+    "name": "数据结构题库",
+    "description": "数据结构C语言版配套题库",
+    "visibility": "public",
+    "total_questions": 82,
+    "tags": [],
+    "created_at": "2026-06-16T06:52:35.873384",
+    "updated_at": "2026-06-16T06:52:35.873384"
+  },
+  "questions": [
+    {
+      "id": "787550ec-82f3-4a87-864c-19b096792893",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 1,
+      "content": {
+        "stem": "数据结构是指（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "数据元素的集合"
+          },
+          {
+            "key": "B",
+            "text": "数据的存储结构"
+          },
+          {
+            "key": "C",
+            "text": "相互之间存在一种或多种特定关系的数据元素的集合"
+          },
+          {
+            "key": "D",
+            "text": "数据的逻辑结构"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "数据结构是相互之间存在一种或多种特定关系的数据元素的集合。",
+        "correct_answer": "C"
+      },
+      "knowledge_point_uuids": [
+        "ee555b40-a571-4723-8808-6df9673f9f2c"
+      ],
+      "tags": [
+        "易错"
+      ],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T09:34:46.490285"
+    },
+    {
+      "id": "33c6b3bc-191c-47e5-90cb-775606d780f0",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 3,
+      "content": {
+        "stem": "以下属于非线性数据结构的是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "栈"
+          },
+          {
+            "key": "B",
+            "text": "队列"
+          },
+          {
+            "key": "C",
+            "text": "树"
+          },
+          {
+            "key": "D",
+            "text": "线性表"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "树和图属于非线性数据结构，栈、队列、线性表属于线性结构。",
+        "correct_answer": "C"
+      },
+      "knowledge_point_uuids": [
+        "ee555b40-a571-4723-8808-6df9673f9f2c"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "68324cf3-a51b-46a1-89f0-10cbf441b6a2",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 16,
+      "content": {
+        "stem": "双向链表中，每个结点包含（）个指针域。",
+        "options": [
+          {
+            "key": "A",
+            "text": "1"
+          },
+          {
+            "key": "B",
+            "text": "2"
+          },
+          {
+            "key": "C",
+            "text": "3"
+          },
+          {
+            "key": "D",
+            "text": "0"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "双向链表结点包含前驱指针prior和后继指针next。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "e9eda9d1-ff3e-4bf1-aaa8-56ea4a40259f"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "23c77976-3fd4-4d1c-a936-0ce1b13601bd",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 2,
+      "content": {
+        "stem": "数据的逻辑结构可以分为（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "顺序结构和链式结构"
+          },
+          {
+            "key": "B",
+            "text": "线性结构和非线性结构"
+          },
+          {
+            "key": "C",
+            "text": "存储结构和逻辑结构"
+          },
+          {
+            "key": "D",
+            "text": "静态结构和动态结构"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "逻辑结构分为线性结构（线性表、栈、队列等）和非线性结构（树、图等）。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "ee555b40-a571-4723-8808-6df9673f9f2c"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "28ef489b-c933-4ce4-855a-5779d0b1257f",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 4,
+      "content": {
+        "stem": "for(i=0;i<n;i++) for(j=0;j<n;j++) x++; 的时间复杂度是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "O(n)"
+          },
+          {
+            "key": "B",
+            "text": "O(n²)"
+          },
+          {
+            "key": "C",
+            "text": "O(log n)"
+          },
+          {
+            "key": "D",
+            "text": "O(n³)"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "两层循环各执行n次，总执行次数为n²，时间复杂度O(n²)。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "74c17a38-40ed-4ef2-83a1-04fe4984be78"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "1dc56b0f-5184-48e6-bebb-7b4a49592c67",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 5,
+      "content": {
+        "stem": "算法分析中，O(n²)表示（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "线性阶"
+          },
+          {
+            "key": "B",
+            "text": "平方阶"
+          },
+          {
+            "key": "C",
+            "text": "对数阶"
+          },
+          {
+            "key": "D",
+            "text": "指数阶"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "O(n²)称为平方阶时间复杂度。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "74c17a38-40ed-4ef2-83a1-04fe4984be78"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "c17296d0-9758-4ad4-b186-aa64e41cb2d5",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 6,
+      "content": {
+        "stem": "下面程序段的时间复杂度是：i=1; while(i<=n) i=i*2;",
+        "options": [
+          {
+            "key": "A",
+            "text": "O(n)"
+          },
+          {
+            "key": "B",
+            "text": "O(n²)"
+          },
+          {
+            "key": "C",
+            "text": "O(log₂n)"
+          },
+          {
+            "key": "D",
+            "text": "O(2ⁿ)"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "i每次翻倍，执行次数k满足2^k≤n，即k≈log₂n。",
+        "correct_answer": "C"
+      },
+      "knowledge_point_uuids": [
+        "74c17a38-40ed-4ef2-83a1-04fe4984be78"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "926d931e-54b4-4d3a-8a38-9ee1d5c84f72",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 33,
+      "content": {
+        "stem": "权值{7,5,2,4}的哈夫曼树WPL是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "35"
+          },
+          {
+            "key": "B",
+            "text": "36"
+          },
+          {
+            "key": "C",
+            "text": "37"
+          },
+          {
+            "key": "D",
+            "text": "38"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "WPL=7×1+5×2+2×3+4×3=35。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "29eb66fb-ddd4-4e8c-9c53-b7590eddae81"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "710f829d-d4ea-4315-b676-614bde2f2912",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 7,
+      "content": {
+        "stem": "算法的空间复杂度是指（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "算法程序中的语句条数"
+          },
+          {
+            "key": "B",
+            "text": "算法程序所占的存储空间"
+          },
+          {
+            "key": "C",
+            "text": "算法执行过程中所需的存储空间"
+          },
+          {
+            "key": "D",
+            "text": "算法程序的大小"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "空间复杂度指算法执行过程中所需的额外存储空间。",
+        "correct_answer": "C"
+      },
+      "knowledge_point_uuids": [
+        "f5b956db-72db-4baa-a972-1686ac4641ae"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "60114498-fac7-4227-8e6b-707f8ba0c820",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 8,
+      "content": {
+        "stem": "若算法执行时所需额外空间与问题规模n无关，则空间复杂度为（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "O(1)"
+          },
+          {
+            "key": "B",
+            "text": "O(n)"
+          },
+          {
+            "key": "C",
+            "text": "O(n²)"
+          },
+          {
+            "key": "D",
+            "text": "O(log n)"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "空间复杂度为常数阶O(1)。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "f5b956db-72db-4baa-a972-1686ac4641ae"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "cb5725bb-3875-45ca-92bd-277f0e97e990",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 9,
+      "content": {
+        "stem": "线性结构中元素之间存在（）关系。",
+        "options": [
+          {
+            "key": "A",
+            "text": "一对一"
+          },
+          {
+            "key": "B",
+            "text": "一对多"
+          },
+          {
+            "key": "C",
+            "text": "多对多"
+          },
+          {
+            "key": "D",
+            "text": "没有关系"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "线性结构元素之间存在一对一的关系。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "f5aae3af-3be6-4dbc-ab36-52132cc60968"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "7a71f155-a56a-44c0-af67-f4090b08dbff",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 10,
+      "content": {
+        "stem": "顺序表随机存取第i个元素的时间复杂度是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "O(1)"
+          },
+          {
+            "key": "B",
+            "text": "O(n)"
+          },
+          {
+            "key": "C",
+            "text": "O(log n)"
+          },
+          {
+            "key": "D",
+            "text": "O(n²)"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "顺序表支持随机存取，访问任意元素的时间为O(1)。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "07fa514b-5ada-41c3-b8ca-0150fde8760a"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "be6874aa-4eb1-4f39-8b3a-b411e266abd0",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 11,
+      "content": {
+        "stem": "在顺序表中插入一个元素，平均需要移动的元素个数是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "n"
+          },
+          {
+            "key": "B",
+            "text": "n/2"
+          },
+          {
+            "key": "C",
+            "text": "(n+1)/2"
+          },
+          {
+            "key": "D",
+            "text": "n-1"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "在n个元素的顺序表中插入，平均移动n/2个元素。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "f39d1e49-c71b-4c6f-9b4e-1675ced23488"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "75327b3d-fdce-4e00-8a21-51748448037e",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 12,
+      "content": {
+        "stem": "顺序表删除第i个元素，需要移动（）个元素。",
+        "options": [
+          {
+            "key": "A",
+            "text": "n-i"
+          },
+          {
+            "key": "B",
+            "text": "n-i+1"
+          },
+          {
+            "key": "C",
+            "text": "i"
+          },
+          {
+            "key": "D",
+            "text": "n"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "删除第i个元素，需将后面n-i个元素前移。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "f39d1e49-c71b-4c6f-9b4e-1675ced23488"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "c367c05d-5be1-43ae-b7eb-07c51dde20d3",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 13,
+      "content": {
+        "stem": "单链表在p结点后插入q结点的正确操作是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "p->next=q; q->next=p->next"
+          },
+          {
+            "key": "B",
+            "text": "q->next=p->next; p->next=q"
+          },
+          {
+            "key": "C",
+            "text": "p->next=q; q->next=p"
+          },
+          {
+            "key": "D",
+            "text": "q->next=p; p->next=q"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "先将q指向p的后继，再让p指向q，防止链表断裂。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "4b9a893a-a7d3-4c37-8121-63da4fe3e9ea"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "d994bc7d-6971-4942-9f8a-9f5961be50fb",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 14,
+      "content": {
+        "stem": "链表不具备的特点是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "可随机访问任意元素"
+          },
+          {
+            "key": "B",
+            "text": "插入删除不需要移动元素"
+          },
+          {
+            "key": "C",
+            "text": "存储空间不必连续"
+          },
+          {
+            "key": "D",
+            "text": "所需空间与线性表长度成正比"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "链表只能顺序访问，不支持随机访问。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "4b9a893a-a7d3-4c37-8121-63da4fe3e9ea"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "0e393a2e-5c19-4e80-a6d2-3b62c2a53a5e",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 15,
+      "content": {
+        "stem": "在单链表中，删除p结点的后继结点的操作是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "p=p->next"
+          },
+          {
+            "key": "B",
+            "text": "p->next=p->next->next"
+          },
+          {
+            "key": "C",
+            "text": "p->next=p"
+          },
+          {
+            "key": "D",
+            "text": "free(p->next)"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "跳过p的后继结点，指向下下个结点。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "4b9a893a-a7d3-4c37-8121-63da4fe3e9ea"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "1e54c5f4-51a7-468d-9386-1d2cb4b26f45",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 17,
+      "content": {
+        "stem": "在双向链表中删除p结点，需要修改（）个指针。",
+        "options": [
+          {
+            "key": "A",
+            "text": "1"
+          },
+          {
+            "key": "B",
+            "text": "2"
+          },
+          {
+            "key": "C",
+            "text": "3"
+          },
+          {
+            "key": "D",
+            "text": "4"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "需要修改p的前驱结点的next指针和p的后继结点的prior指针。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "e9eda9d1-ff3e-4bf1-aaa8-56ea4a40259f"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "7f5fad48-8d65-423e-a61a-ba2d44adfc23",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 18,
+      "content": {
+        "stem": "栈的特点是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "先进先出"
+          },
+          {
+            "key": "B",
+            "text": "先进后出"
+          },
+          {
+            "key": "C",
+            "text": "随机访问"
+          },
+          {
+            "key": "D",
+            "text": "两端都可操作"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "栈是后进先出（LIFO）的线性表。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "84a83d44-599c-473b-9065-3b402ddb2ea0"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "5494529f-1e80-413a-88a0-d201ebde48e3",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 19,
+      "content": {
+        "stem": "入栈序列为a,b,c,d，不可能的出栈序列是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "d,c,b,a"
+          },
+          {
+            "key": "B",
+            "text": "b,c,a,d"
+          },
+          {
+            "key": "C",
+            "text": "d,a,b,c"
+          },
+          {
+            "key": "D",
+            "text": "a,b,c,d"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "d出栈时a,b,c均在栈中，出栈顺序必须为c,b,a，故d,a,b,c不可能。",
+        "correct_answer": "C"
+      },
+      "knowledge_point_uuids": [
+        "84a83d44-599c-473b-9065-3b402ddb2ea0"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "dc49d47e-d78c-45af-a583-e59dd0cdd126",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 20,
+      "content": {
+        "stem": "顺序栈S的栈顶指针为top（指向栈顶元素位置），栈空的条件是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "top==0"
+          },
+          {
+            "key": "B",
+            "text": "top==-1"
+          },
+          {
+            "key": "C",
+            "text": "top==MaxSize"
+          },
+          {
+            "key": "D",
+            "text": "top==MaxSize-1"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "栈顶指针top指向栈顶元素，栈空时top=-1。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "b42a9684-0b33-472e-ad57-37aaef36d9f1"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "23f8631e-e733-46e8-ba87-8186a45a333c",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 21,
+      "content": {
+        "stem": "递归算法通常利用（）实现。",
+        "options": [
+          {
+            "key": "A",
+            "text": "栈"
+          },
+          {
+            "key": "B",
+            "text": "队列"
+          },
+          {
+            "key": "C",
+            "text": "数组"
+          },
+          {
+            "key": "D",
+            "text": "链表"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "递归调用的本质是利用栈实现函数调用的后进先出。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "b1fa8cfa-5876-4bf4-93ed-9d88727bb2d7"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "3a3a216a-96ad-4a09-8e90-64b881a4e9a4",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 22,
+      "content": {
+        "stem": "广度优先搜索BFS使用的辅助数据结构是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "栈"
+          },
+          {
+            "key": "B",
+            "text": "队列"
+          },
+          {
+            "key": "C",
+            "text": "树"
+          },
+          {
+            "key": "D",
+            "text": "图"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "BFS利用队列先进先出的特性实现层次遍历。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "fcf07533-1b26-4219-baa1-a595dbfb2810"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "fd72195f-e914-4122-aa1f-872255206035",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 23,
+      "content": {
+        "stem": "循环队列中，判断队满的条件是（front指向队头，rear指向队尾下一个位置）",
+        "options": [
+          {
+            "key": "A",
+            "text": "front==rear"
+          },
+          {
+            "key": "B",
+            "text": "(rear+1)%MaxSize==front"
+          },
+          {
+            "key": "C",
+            "text": "rear+1==front"
+          },
+          {
+            "key": "D",
+            "text": "front==MaxSize"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "循环队列牺牲一个空间区分队空和队满。队满条件：(rear+1)%MaxSize==front。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "03d2d2f2-ef1c-4844-9959-23d1464c7930"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "33a2d692-9aaa-4c7c-94f1-bd82658054b7",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 24,
+      "content": {
+        "stem": "循环队列中，队空的条件是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "front==rear"
+          },
+          {
+            "key": "B",
+            "text": "(rear+1)%MaxSize==front"
+          },
+          {
+            "key": "C",
+            "text": "rear==MaxSize"
+          },
+          {
+            "key": "D",
+            "text": "front==-1"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "循环队列中队头指针等于队尾指针时表示队空。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "03d2d2f2-ef1c-4844-9959-23d1464c7930"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "2db6daf3-5bb4-432b-b994-940daf82fbb7",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 25,
+      "content": {
+        "stem": "二叉树第i层（i≥1）最多有（）个结点。",
+        "options": [
+          {
+            "key": "A",
+            "text": "2ⁱ"
+          },
+          {
+            "key": "B",
+            "text": "2ⁱ⁻¹"
+          },
+          {
+            "key": "C",
+            "text": "2ⁱ⁺¹"
+          },
+          {
+            "key": "D",
+            "text": "i"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "二叉树第i层最多有2^(i-1)个结点。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "2864a4f2-b963-43f8-9197-9f75fcb92a23"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "9cafeb28-592e-4aca-8d03-db6f026ddfb9",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 26,
+      "content": {
+        "stem": "深度为h的二叉树最多有（）个结点。",
+        "options": [
+          {
+            "key": "A",
+            "text": "2ʰ"
+          },
+          {
+            "key": "B",
+            "text": "2ʰ⁻¹"
+          },
+          {
+            "key": "C",
+            "text": "2ʰ⁺¹"
+          },
+          {
+            "key": "D",
+            "text": "2ʰ-1"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "深度为h的二叉树最多有2^h-1个结点（满二叉树）。",
+        "correct_answer": "D"
+      },
+      "knowledge_point_uuids": [
+        "2864a4f2-b963-43f8-9197-9f75fcb92a23"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "6279874f-30a7-4b85-9223-01b09e7cb5ca",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 27,
+      "content": {
+        "stem": "叶子结点n₀与度为2的结点n₂的关系是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "n₀=n₂+1"
+          },
+          {
+            "key": "B",
+            "text": "n₀=n₂"
+          },
+          {
+            "key": "C",
+            "text": "n₀=n₂-1"
+          },
+          {
+            "key": "D",
+            "text": "n₀=2n₂"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "在任何非空二叉树中，n₀=n₂+1。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "2864a4f2-b963-43f8-9197-9f75fcb92a23"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "e830a7d2-2611-4140-a8fb-7a7d2d4fbaf9",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 28,
+      "content": {
+        "stem": "先序遍历二叉树的顺序是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "根-左-右"
+          },
+          {
+            "key": "B",
+            "text": "左-根-右"
+          },
+          {
+            "key": "C",
+            "text": "左-右-根"
+          },
+          {
+            "key": "D",
+            "text": "根-右-左"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "先序遍历：先访问根结点，再遍历左子树，最后遍历右子树。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "f71ca4ae-81dc-4cb9-96be-cdf110ffb44b"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "9fda4ed8-c78c-4bf5-a16b-545fdc7b3d30",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 29,
+      "content": {
+        "stem": "已知先序ABDCEF，中序DBAECF，则后序为（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "DBEFCA"
+          },
+          {
+            "key": "B",
+            "text": "DBEFAC"
+          },
+          {
+            "key": "C",
+            "text": "BDAECF"
+          },
+          {
+            "key": "D",
+            "text": "DBFECA"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "先序A为根，中序DBAECF分左右子树，递归可得后序DBEFCA。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "f71ca4ae-81dc-4cb9-96be-cdf110ffb44b"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "52074990-1dc1-452c-9dac-19034bb8c957",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 30,
+      "content": {
+        "stem": "中序遍历二叉树的顺序是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "根-左-右"
+          },
+          {
+            "key": "B",
+            "text": "左-根-右"
+          },
+          {
+            "key": "C",
+            "text": "左-右-根"
+          },
+          {
+            "key": "D",
+            "text": "根-右-左"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "中序遍历：先遍历左子树，再访问根结点，最后遍历右子树。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "f71ca4ae-81dc-4cb9-96be-cdf110ffb44b"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "71c34fe4-97e6-4832-9a12-3f595a383c4c",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 31,
+      "content": {
+        "stem": "线索二叉树中，线索指向的是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "父结点"
+          },
+          {
+            "key": "B",
+            "text": "子结点"
+          },
+          {
+            "key": "C",
+            "text": "遍历序列中的前驱或后继"
+          },
+          {
+            "key": "D",
+            "text": "兄弟结点"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "线索二叉树利用空指针域指向遍历序列中的前驱或后继结点。",
+        "correct_answer": "C"
+      },
+      "knowledge_point_uuids": [
+        "0f3539cf-2872-4e97-b51c-2c9dea96aa52"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "fb0a43da-022a-4310-8c9a-7e558f4c24a2",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 32,
+      "content": {
+        "stem": "哈夫曼树中，带权路径长度WPL是指（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "所有叶子结点的权值之和"
+          },
+          {
+            "key": "B",
+            "text": "所有叶子结点到根结点的路径长度之和"
+          },
+          {
+            "key": "C",
+            "text": "所有叶子结点的权值×路径长度之和"
+          },
+          {
+            "key": "D",
+            "text": "所有内部结点的权值之和"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "WPL=∑(叶子结点权值×路径长度)。",
+        "correct_answer": "C"
+      },
+      "knowledge_point_uuids": [
+        "29eb66fb-ddd4-4e8c-9c53-b7590eddae81"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "ed775781-f732-49f0-a881-d897e2666a85",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 34,
+      "content": {
+        "stem": "哈夫曼树中，度数为2的结点个数与叶子结点个数的关系是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "n₂=n₀-1"
+          },
+          {
+            "key": "B",
+            "text": "n₂=n₀"
+          },
+          {
+            "key": "C",
+            "text": "n₂=n₀+1"
+          },
+          {
+            "key": "D",
+            "text": "n₂=2n₀"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "哈夫曼树中无度为1的结点，n₀=n₂+1，即n₂=n₀-1。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "29eb66fb-ddd4-4e8c-9c53-b7590eddae81"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "c6cfbe56-9094-42bd-a19e-122b125ad680",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 35,
+      "content": {
+        "stem": "图中路径的定义是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "从一个顶点到另一个顶点的任意边"
+          },
+          {
+            "key": "B",
+            "text": "顶点序列，相邻顶点间有边"
+          },
+          {
+            "key": "C",
+            "text": "边的集合"
+          },
+          {
+            "key": "D",
+            "text": "顶点的集合"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "路径是由顶点序列组成的，且相邻顶点间都存在边。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "9e65e0ca-96f3-4a75-b991-f31bd4db1b59"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "4dfb5d86-3015-4c53-8ca4-c0c79186763d",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 36,
+      "content": {
+        "stem": "n个顶点的无向图最多有（）条边。",
+        "options": [
+          {
+            "key": "A",
+            "text": "n"
+          },
+          {
+            "key": "B",
+            "text": "n(n-1)"
+          },
+          {
+            "key": "C",
+            "text": "n(n-1)/2"
+          },
+          {
+            "key": "D",
+            "text": "n²"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "完全无向图边数为n(n-1)/2。",
+        "correct_answer": "C"
+      },
+      "knowledge_point_uuids": [
+        "9e65e0ca-96f3-4a75-b991-f31bd4db1b59"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "91f0649c-ceef-445c-8e26-6687bf0d2ca2",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 37,
+      "content": {
+        "stem": "n个顶点的无向图，邻接矩阵的大小是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "n×n"
+          },
+          {
+            "key": "B",
+            "text": "n×(n-1)"
+          },
+          {
+            "key": "C",
+            "text": "(n-1)×(n-1)"
+          },
+          {
+            "key": "D",
+            "text": "n"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "邻接矩阵是n×n的方阵。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "1ab2aefc-3ee4-487e-8ebd-9366f9bf0969"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "1cae995e-8cd8-4928-8ccc-c06359231a37",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 38,
+      "content": {
+        "stem": "无向图的邻接矩阵是（）矩阵。",
+        "options": [
+          {
+            "key": "A",
+            "text": "上三角"
+          },
+          {
+            "key": "B",
+            "text": "下三角"
+          },
+          {
+            "key": "C",
+            "text": "对称"
+          },
+          {
+            "key": "D",
+            "text": "对角"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "无向图的邻接矩阵关于主对角线对称。",
+        "correct_answer": "C"
+      },
+      "knowledge_point_uuids": [
+        "1ab2aefc-3ee4-487e-8ebd-9366f9bf0969"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "44be482b-42fc-48cb-ade4-c25bfdb0d4d9",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 39,
+      "content": {
+        "stem": "邻接表适合存储（）图。",
+        "options": [
+          {
+            "key": "A",
+            "text": "稠密"
+          },
+          {
+            "key": "B",
+            "text": "稀疏"
+          },
+          {
+            "key": "C",
+            "text": "完全"
+          },
+          {
+            "key": "D",
+            "text": "有向"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "邻接表存储空间与边数成正比，适合存储稀疏图。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "a3263e9b-29dc-462b-8dee-891759068fb9"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "458da0ae-ce45-4b6f-872a-ad951feec450",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 40,
+      "content": {
+        "stem": "DFS遍历图的时间复杂度（邻接表）是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "O(n)"
+          },
+          {
+            "key": "B",
+            "text": "O(n+e)"
+          },
+          {
+            "key": "C",
+            "text": "O(n²)"
+          },
+          {
+            "key": "D",
+            "text": "O(n×e)"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "邻接表DFS：访问所有顶点O(n)，遍历所有边O(e)，总O(n+e)。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "cfd62235-359a-494f-a708-78c0bbfb837f"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "68667ddd-4622-4711-9d66-f5204adb861f",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 41,
+      "content": {
+        "stem": "DFS使用的辅助数据结构是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "队列"
+          },
+          {
+            "key": "B",
+            "text": "栈"
+          },
+          {
+            "key": "C",
+            "text": "数组"
+          },
+          {
+            "key": "D",
+            "text": "链表"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "DFS使用栈（递归或显式栈）实现回溯。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "cfd62235-359a-494f-a708-78c0bbfb837f"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "6f394efb-7c9f-4e87-9420-b2cea582ccf6",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 42,
+      "content": {
+        "stem": "BFS遍历图使用的辅助数据结构是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "队列"
+          },
+          {
+            "key": "B",
+            "text": "栈"
+          },
+          {
+            "key": "C",
+            "text": "数组"
+          },
+          {
+            "key": "D",
+            "text": "链表"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "BFS使用队列实现层次遍历。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "b0983f1d-b957-45c4-b189-c43136645d9e"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "d3653876-5e2c-4715-bad5-a23cda2de1c1",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 43,
+      "content": {
+        "stem": "BFS时间复杂度（邻接表）是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "O(n)"
+          },
+          {
+            "key": "B",
+            "text": "O(n+e)"
+          },
+          {
+            "key": "C",
+            "text": "O(n²)"
+          },
+          {
+            "key": "D",
+            "text": "O(n×e)"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "BFS与DFS时间复杂度相同，均为O(n+e)。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "b0983f1d-b957-45c4-b189-c43136645d9e"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "455c44d5-bbcb-4cf1-8a4d-89ef6b39c3d7",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 44,
+      "content": {
+        "stem": "Prim算法适合求（）的最小生成树。",
+        "options": [
+          {
+            "key": "A",
+            "text": "稠密图"
+          },
+          {
+            "key": "B",
+            "text": "稀疏图"
+          },
+          {
+            "key": "C",
+            "text": "有向图"
+          },
+          {
+            "key": "D",
+            "text": "非连通图"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "Prim算法从顶点出发，适合稠密图。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "28f77951-e03f-4b44-ba0a-80651a645cd0"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "dc107c68-e262-4bab-ac68-6a20115ca509",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 45,
+      "content": {
+        "stem": "Kruskal算法适合求（）的最小生成树。",
+        "options": [
+          {
+            "key": "A",
+            "text": "稠密图"
+          },
+          {
+            "key": "B",
+            "text": "稀疏图"
+          },
+          {
+            "key": "C",
+            "text": "有向图"
+          },
+          {
+            "key": "D",
+            "text": "非连通图"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "Kruskal算法从边出发，适合稀疏图。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "28f77951-e03f-4b44-ba0a-80651a645cd0"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "9468921a-5106-484f-a9c2-a85f83663d6a",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 46,
+      "content": {
+        "stem": "n个顶点的连通图的最小生成树有（）条边。",
+        "options": [
+          {
+            "key": "A",
+            "text": "n"
+          },
+          {
+            "key": "B",
+            "text": "n-1"
+          },
+          {
+            "key": "C",
+            "text": "n+1"
+          },
+          {
+            "key": "D",
+            "text": "n(n-1)/2"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "n个顶点的生成树有n-1条边。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "28f77951-e03f-4b44-ba0a-80651a645cd0"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "9f35eea2-d88f-4d27-9701-78d298114aa4",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 47,
+      "content": {
+        "stem": "Dijkstra算法不能处理（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "有向图"
+          },
+          {
+            "key": "B",
+            "text": "无向图"
+          },
+          {
+            "key": "C",
+            "text": "带权图"
+          },
+          {
+            "key": "D",
+            "text": "负权边"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "Dijkstra基于贪心，不能处理负权边。",
+        "correct_answer": "D"
+      },
+      "knowledge_point_uuids": [
+        "4acdd09d-73e6-4db7-80c5-d992f5e44b6a"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "42214459-8ace-4b1f-9b30-66bbefe9df75",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 48,
+      "content": {
+        "stem": "Dijkstra算法的时间复杂度（邻接矩阵）是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "O(n)"
+          },
+          {
+            "key": "B",
+            "text": "O(n²)"
+          },
+          {
+            "key": "C",
+            "text": "O(nlog n)"
+          },
+          {
+            "key": "D",
+            "text": "O(n³)"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "Dijkstra算法邻接矩阵实现的时间复杂度为O(n²)。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "4acdd09d-73e6-4db7-80c5-d992f5e44b6a"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "540163da-5742-433f-8204-66a244f43b0e",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 49,
+      "content": {
+        "stem": "一个有向图能进行拓扑排序的充要条件是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "图是强连通的"
+          },
+          {
+            "key": "B",
+            "text": "图是无环的"
+          },
+          {
+            "key": "C",
+            "text": "图是有向无环图"
+          },
+          {
+            "key": "D",
+            "text": "图有唯一的拓扑序列"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "拓扑排序要求图是有向无环图。",
+        "correct_answer": "C"
+      },
+      "knowledge_point_uuids": [
+        "5ac3d084-2d95-4b0c-8321-e225c4d5e44f"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "b3226032-6ef9-43d8-a14e-dc5b839269e8",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 50,
+      "content": {
+        "stem": "关键路径是指（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "最短路径"
+          },
+          {
+            "key": "B",
+            "text": "最长路径"
+          },
+          {
+            "key": "C",
+            "text": "具有最大权值的路径"
+          },
+          {
+            "key": "D",
+            "text": "AOE网中从源点到汇点的最长路径"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "关键路径是AOE网中从源点到汇点的最长路径，决定工程的最短完成时间。",
+        "correct_answer": "D"
+      },
+      "knowledge_point_uuids": [
+        "65eb94f2-b2e5-4f6a-8a03-29489c9525b3"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "57276414-e23f-44d8-b7e6-0db231f259f3",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 51,
+      "content": {
+        "stem": "关键路径上的活动称为（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "关键活动"
+          },
+          {
+            "key": "B",
+            "text": "重要活动"
+          },
+          {
+            "key": "C",
+            "text": "主要活动"
+          },
+          {
+            "key": "D",
+            "text": "必要活动"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "关键路径上的活动是关键活动，其时间余量为0。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "65eb94f2-b2e5-4f6a-8a03-29489c9525b3"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "628713c8-8a7a-4bd9-b81d-65f327dff684",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 52,
+      "content": {
+        "stem": "顺序查找中，查找成功的平均比较次数约为（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "n/2"
+          },
+          {
+            "key": "B",
+            "text": "(n+1)/2"
+          },
+          {
+            "key": "C",
+            "text": "n"
+          },
+          {
+            "key": "D",
+            "text": "log₂n"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "等概率下，ASL成功=(n+1)/2。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "225c9b6b-9450-4ed2-b067-10093a6a3710"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "8fcea7b1-4b09-4efb-936f-5139fec850a5",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 53,
+      "content": {
+        "stem": "折半查找的时间复杂度是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "O(n)"
+          },
+          {
+            "key": "B",
+            "text": "O(n²)"
+          },
+          {
+            "key": "C",
+            "text": "O(log₂n)"
+          },
+          {
+            "key": "D",
+            "text": "O(nlog₂n)"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "折半查找每次排除一半数据，时间复杂度O(log₂n)。",
+        "correct_answer": "C"
+      },
+      "knowledge_point_uuids": [
+        "a23b8382-1b9d-4b1c-a70f-872971c8bdbb"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "78d9a0c9-e600-4128-baf4-24067be035f7",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 54,
+      "content": {
+        "stem": "折半查找要求数据（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "无序存储"
+          },
+          {
+            "key": "B",
+            "text": "有序且顺序存储"
+          },
+          {
+            "key": "C",
+            "text": "链式存储"
+          },
+          {
+            "key": "D",
+            "text": "有序且链式存储"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "折半查找要求数据有序且采用顺序存储结构。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "a23b8382-1b9d-4b1c-a70f-872971c8bdbb"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "72f5fa41-be63-43be-8bbb-13443bfede4d",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 55,
+      "content": {
+        "stem": "在有序表{1,3,9,12,32,41,62,75,77,82,95,100}中查找62需要比较（）次。",
+        "options": [
+          {
+            "key": "A",
+            "text": "1"
+          },
+          {
+            "key": "B",
+            "text": "2"
+          },
+          {
+            "key": "C",
+            "text": "3"
+          },
+          {
+            "key": "D",
+            "text": "4"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "第一次mid=41→右，第二次mid=75→左，第三次mid=62。",
+        "correct_answer": "C"
+      },
+      "knowledge_point_uuids": [
+        "a23b8382-1b9d-4b1c-a70f-872971c8bdbb"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "b841aa69-bc90-4628-8edb-25c347a03682",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 56,
+      "content": {
+        "stem": "二叉排序树中，左子树上所有结点的值（）根结点的值。",
+        "options": [
+          {
+            "key": "A",
+            "text": "大于"
+          },
+          {
+            "key": "B",
+            "text": "小于"
+          },
+          {
+            "key": "C",
+            "text": "等于"
+          },
+          {
+            "key": "D",
+            "text": "大于等于"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "BST左子树所有结点值小于根结点，右子树所有结点值大于根结点。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "aac8045b-c64d-4673-a078-806b21826764"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "df2175e4-7496-45cf-b7f3-9682d67dcb77",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 57,
+      "content": {
+        "stem": "BST中序遍历得到的是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "递增序列"
+          },
+          {
+            "key": "B",
+            "text": "递减序列"
+          },
+          {
+            "key": "C",
+            "text": "无序序列"
+          },
+          {
+            "key": "D",
+            "text": "随机序列"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "对BST进行中序遍历得到递增有序序列。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "aac8045b-c64d-4673-a078-806b21826764"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "e3fc4f15-1f76-4548-a7f3-10b9a6bdd4c3",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 58,
+      "content": {
+        "stem": "AVL树的平衡因子范围是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "[-2,2]"
+          },
+          {
+            "key": "B",
+            "text": "[-1,1]"
+          },
+          {
+            "key": "C",
+            "text": "[0,1]"
+          },
+          {
+            "key": "D",
+            "text": "[-1,2]"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "AVL树每个结点的平衡因子（左高-右高）绝对值不超过1。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "c313b28d-6f41-496b-b63a-c0ccfb6753f7"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "2117fc18-1e4e-4276-ad07-2eb268769597",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 59,
+      "content": {
+        "stem": "AVL树插入结点后失衡，调整方式有（）种。",
+        "options": [
+          {
+            "key": "A",
+            "text": "2"
+          },
+          {
+            "key": "B",
+            "text": "3"
+          },
+          {
+            "key": "C",
+            "text": "4"
+          },
+          {
+            "key": "D",
+            "text": "5"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "AVL四种旋转调整：LL、RR、LR、RL。",
+        "correct_answer": "C"
+      },
+      "knowledge_point_uuids": [
+        "c313b28d-6f41-496b-b63a-c0ccfb6753f7"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "56584650-a1c6-4121-b574-d7eb16199576",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 60,
+      "content": {
+        "stem": "AVL树查找的时间复杂度是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "O(n)"
+          },
+          {
+            "key": "B",
+            "text": "O(log₂n)"
+          },
+          {
+            "key": "C",
+            "text": "O(n²)"
+          },
+          {
+            "key": "D",
+            "text": "O(1)"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "AVL树是平衡的二叉排序树，查找时间复杂度O(log₂n)。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "c313b28d-6f41-496b-b63a-c0ccfb6753f7"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "57b666d7-159b-4df1-aad0-a4c32fb816e4",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 61,
+      "content": {
+        "stem": "下列关于B-树的说法，错误的是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "B-树是一棵平衡的多路查找树"
+          },
+          {
+            "key": "B",
+            "text": "B-树的所有叶子结点在同一层"
+          },
+          {
+            "key": "C",
+            "text": "B-树中一个结点可以有多个关键字"
+          },
+          {
+            "key": "D",
+            "text": "B-树只能在叶子结点中查找"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "B-树可以在所有结点中查找，不仅限于叶子结点。",
+        "correct_answer": "D"
+      },
+      "knowledge_point_uuids": [
+        "199d9352-4516-4a78-8bdd-16812a027c09"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "c70530ab-600f-4198-a2c6-9913458e30f1",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 62,
+      "content": {
+        "stem": "一棵m阶B-树中，每个非根结点至少含有的关键字个数是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "⌈m/2⌉-1"
+          },
+          {
+            "key": "B",
+            "text": "⌈m/2⌉"
+          },
+          {
+            "key": "C",
+            "text": "m-1"
+          },
+          {
+            "key": "D",
+            "text": "m/2"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "m阶B-树，除根结点外每个结点至少⌈m/2⌉-1个关键字。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "199d9352-4516-4a78-8bdd-16812a027c09"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "a33d7769-c882-436f-8de6-1e843308faec",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 63,
+      "content": {
+        "stem": "哈希查找中，冲突是指（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "两个关键字的值相同"
+          },
+          {
+            "key": "B",
+            "text": "两个关键字映射到同一个地址"
+          },
+          {
+            "key": "C",
+            "text": "关键字与地址相同"
+          },
+          {
+            "key": "D",
+            "text": "关键字个数超过表长"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "不同的关键字被散列函数映射到同一地址称为冲突。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "542df249-1c7b-4b6f-8329-443b74c22137"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "29df916e-b605-4edb-a63b-8895adb6838c",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 64,
+      "content": {
+        "stem": "解决哈希冲突的方法中，开放地址法的缺点是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "容易产生堆积"
+          },
+          {
+            "key": "B",
+            "text": "空间利用率低"
+          },
+          {
+            "key": "C",
+            "text": "查找效率低"
+          },
+          {
+            "key": "D",
+            "text": "插入效率低"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "开放地址法处理冲突时，容易产生堆积（聚集）现象。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "542df249-1c7b-4b6f-8329-443b74c22137"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "fc124865-b944-4b50-8275-a8a82d337610",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 65,
+      "content": {
+        "stem": "链地址法解决冲突时，哈希表中每个元素是一个（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "数组"
+          },
+          {
+            "key": "B",
+            "text": "链表"
+          },
+          {
+            "key": "C",
+            "text": "栈"
+          },
+          {
+            "key": "D",
+            "text": "队列"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "链地址法将所有同义词存储在一个链表中。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "542df249-1c7b-4b6f-8329-443b74c22137"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "d9227d13-cb1d-4787-952e-f8ac6c152e97",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 66,
+      "content": {
+        "stem": "直接插入排序的时间复杂度是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "O(n)"
+          },
+          {
+            "key": "B",
+            "text": "O(n²)"
+          },
+          {
+            "key": "C",
+            "text": "O(nlog₂n)"
+          },
+          {
+            "key": "D",
+            "text": "O(n³)"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "直接插入排序平均和最坏时间复杂度O(n²)。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "d26a8142-aae4-4a2a-91a3-ec47ced34fb2"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "acdda614-d2b9-49c2-a6ef-1565fa9f6493",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 67,
+      "content": {
+        "stem": "直接插入排序是（）排序。",
+        "options": [
+          {
+            "key": "A",
+            "text": "稳定的"
+          },
+          {
+            "key": "B",
+            "text": "不稳定的"
+          },
+          {
+            "key": "C",
+            "text": "不确定"
+          },
+          {
+            "key": "D",
+            "text": "以上都不对"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "直接插入排序是稳定的排序方法。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "d26a8142-aae4-4a2a-91a3-ec47ced34fb2"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "9bebadf8-bcb1-4d49-af6a-77e1071334f3",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 68,
+      "content": {
+        "stem": "希尔排序的增量序列最后一个增量必须为（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "0"
+          },
+          {
+            "key": "B",
+            "text": "1"
+          },
+          {
+            "key": "C",
+            "text": "n"
+          },
+          {
+            "key": "D",
+            "text": "n/2"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "希尔排序最后一趟的增量必须为1，确保序列有序。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "e2e2d122-05d7-4125-9114-bdb791cf3b42"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "9555c438-0347-4c0b-9195-6ac37c9c5e6f",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 69,
+      "content": {
+        "stem": "希尔排序是（）的改进。",
+        "options": [
+          {
+            "key": "A",
+            "text": "冒泡排序"
+          },
+          {
+            "key": "B",
+            "text": "直接插入排序"
+          },
+          {
+            "key": "C",
+            "text": "选择排序"
+          },
+          {
+            "key": "D",
+            "text": "归并排序"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "希尔排序是直接插入排序的改进，通过分组插入提高效率。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "e2e2d122-05d7-4125-9114-bdb791cf3b42"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "7235d92b-781d-42d4-aa75-be930cb04814",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 70,
+      "content": {
+        "stem": "冒泡排序初始升序时，比较次数是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "n-1"
+          },
+          {
+            "key": "B",
+            "text": "n"
+          },
+          {
+            "key": "C",
+            "text": "n(n-1)/2"
+          },
+          {
+            "key": "D",
+            "text": "n²/2"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "初始升序时只需一趟n-1次比较。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "2ac652a7-7021-4477-ae5c-3a638821ab33"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "7dd73fd9-073e-4ab4-aa73-d6f4dff8b32c",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 71,
+      "content": {
+        "stem": "冒泡排序是稳定的排序方法。（）",
+        "options": [
+          {
+            "key": "A",
+            "text": "正确"
+          },
+          {
+            "key": "B",
+            "text": "错误"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "冒泡排序是稳定的排序算法。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "2ac652a7-7021-4477-ae5c-3a638821ab33"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "6d4d5ed4-83d7-45df-94cb-da8ffc269380",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 72,
+      "content": {
+        "stem": "快速排序最坏情况的时间复杂度是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "O(n)"
+          },
+          {
+            "key": "B",
+            "text": "O(nlog₂n)"
+          },
+          {
+            "key": "C",
+            "text": "O(n²)"
+          },
+          {
+            "key": "D",
+            "text": "O(n³)"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "每次划分极不平衡时（如已有序），快排退化为O(n²)。",
+        "correct_answer": "C"
+      },
+      "knowledge_point_uuids": [
+        "e5cbaffa-999e-47f8-8ede-0382e006030e"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "db055665-94f3-47a1-8c2f-f97a51a8aef1",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 73,
+      "content": {
+        "stem": "快速排序平均时间复杂度是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "O(n)"
+          },
+          {
+            "key": "B",
+            "text": "O(nlog₂n)"
+          },
+          {
+            "key": "C",
+            "text": "O(n²)"
+          },
+          {
+            "key": "D",
+            "text": "O(n³)"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "快速排序平均时间复杂度为O(nlog₂n)。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "e5cbaffa-999e-47f8-8ede-0382e006030e"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "08a8fa09-a75d-42c7-afb9-01e8ebeae270",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 74,
+      "content": {
+        "stem": "快速排序是（）排序。",
+        "options": [
+          {
+            "key": "A",
+            "text": "稳定的"
+          },
+          {
+            "key": "B",
+            "text": "不稳定的"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "快速排序是不稳定的排序方法。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "e5cbaffa-999e-47f8-8ede-0382e006030e"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "00cb2cbe-aab1-4bcb-be5c-78c7f1d27f5a",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 75,
+      "content": {
+        "stem": "简单选择排序中，交换元素的次数是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "O(n)"
+          },
+          {
+            "key": "B",
+            "text": "O(n²)"
+          },
+          {
+            "key": "C",
+            "text": "O(log n)"
+          },
+          {
+            "key": "D",
+            "text": "O(1)"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "每趟选择后交换一次，共n-1趟，交换O(n)次。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "306c34b3-178a-4298-a7d2-c8cbe1266623"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "b76a4331-0510-433c-95a5-1a3a9b9176ab",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 76,
+      "content": {
+        "stem": "简单选择排序的时间复杂度是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "O(n)"
+          },
+          {
+            "key": "B",
+            "text": "O(n²)"
+          },
+          {
+            "key": "C",
+            "text": "O(nlog₂n)"
+          },
+          {
+            "key": "D",
+            "text": "O(n³)"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "简单选择排序平均和最坏均为O(n²)。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "306c34b3-178a-4298-a7d2-c8cbe1266623"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "ac4ede61-3a30-4775-9e62-908b8d663acd",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 77,
+      "content": {
+        "stem": "堆排序中，建堆的时间复杂度是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "O(n)"
+          },
+          {
+            "key": "B",
+            "text": "O(nlog₂n)"
+          },
+          {
+            "key": "C",
+            "text": "O(n²)"
+          },
+          {
+            "key": "D",
+            "text": "O(log n)"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "建堆可以在O(n)时间内完成。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "fba2dedb-9e8f-40e9-9a13-a0b68ddcfe53"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "4eac1def-4410-4de7-bce1-873efd9b93c0",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 78,
+      "content": {
+        "stem": "大根堆中，堆顶元素是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "最大值"
+          },
+          {
+            "key": "B",
+            "text": "最小值"
+          },
+          {
+            "key": "C",
+            "text": "中位数"
+          },
+          {
+            "key": "D",
+            "text": "平均值"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "大根堆中每个结点大于等于其子结点，堆顶为最大值。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "fba2dedb-9e8f-40e9-9a13-a0b68ddcfe53"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "f8dda405-1d93-4c86-b0b8-2887f406ca20",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 79,
+      "content": {
+        "stem": "堆排序的时间复杂度是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "O(n)"
+          },
+          {
+            "key": "B",
+            "text": "O(nlog₂n)"
+          },
+          {
+            "key": "C",
+            "text": "O(n²)"
+          },
+          {
+            "key": "D",
+            "text": "O(log n)"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "堆排序建堆O(n)+每次调整O(log₂n),总O(nlog₂n)。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "fba2dedb-9e8f-40e9-9a13-a0b68ddcfe53"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "bc0e2950-c133-4aca-8f62-c2be063d4a71",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 80,
+      "content": {
+        "stem": "二路归并排序的时间复杂度是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "O(n)"
+          },
+          {
+            "key": "B",
+            "text": "O(n²)"
+          },
+          {
+            "key": "C",
+            "text": "O(nlog₂n)"
+          },
+          {
+            "key": "D",
+            "text": "O(log n)"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "每趟O(n)，共log₂n趟，总O(nlog₂n)。",
+        "correct_answer": "C"
+      },
+      "knowledge_point_uuids": [
+        "1fea8d3b-f489-402f-9869-a4dddec3b5cd"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "a3e91747-63b6-4ffd-8e6e-52690568566d",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 81,
+      "content": {
+        "stem": "归并排序的空间复杂度是（）。",
+        "options": [
+          {
+            "key": "A",
+            "text": "O(1)"
+          },
+          {
+            "key": "B",
+            "text": "O(n)"
+          },
+          {
+            "key": "C",
+            "text": "O(n²)"
+          },
+          {
+            "key": "D",
+            "text": "O(log n)"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "归并排序需要O(n)的辅助空间。",
+        "correct_answer": "B"
+      },
+      "knowledge_point_uuids": [
+        "1fea8d3b-f489-402f-9869-a4dddec3b5cd"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    },
+    {
+      "id": "ae29b226-a3c3-4b6f-b159-59418203a2df",
+      "type": "single_choice",
+      "difficulty": "2",
+      "status": "published",
+      "priority": 82,
+      "content": {
+        "stem": "归并排序是稳定的排序方法。（）",
+        "options": [
+          {
+            "key": "A",
+            "text": "正确"
+          },
+          {
+            "key": "B",
+            "text": "错误"
+          }
+        ]
+      },
+      "answer": {
+        "explanation": "归并排序是稳定的排序算法。",
+        "correct_answer": "A"
+      },
+      "knowledge_point_uuids": [
+        "1fea8d3b-f489-402f-9869-a4dddec3b5cd"
+      ],
+      "tags": [],
+      "ai_generated": false,
+      "source": "manual",
+      "created_by": null,
+      "created_at": "2026-06-16T07:26:14.843719",
+      "updated_at": "2026-06-16T07:26:14.843719"
+    }
+  ]
+}
