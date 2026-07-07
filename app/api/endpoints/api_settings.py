@@ -153,16 +153,39 @@ async def get_available_models(
     current_user: CurrentUser = Depends(get_current_user),
     db: Session = Depends(get_db)
 ):
+    """获取当前用户可用的模型列表。
+
+    可用性判断优先级：
+    1. 系统全局配置（settings.DEEPSEEK_API_KEY / settings.QWEN_API_KEY）
+    2. 用户个人配置（ApiSettings 表）
+    """
+    from app.core.config import settings
+
     user_id = str(current_user.student_id)
     available = []
     unavailable = []
+
+    # 检查系统全局配置
+    env_keys = {
+        "deepseek": settings.DEEPSEEK_API_KEY,
+        "qwen": settings.QWEN_API_KEY,
+    }
+
     for provider, models in PROVIDER_MODEL_MAP.items():
-        is_available = api_settings_crud.is_provider_available(db, user_id, provider)
+        # 优先检查全局 .env 配置
+        has_env_key = bool(env_keys.get(provider))
+        if has_env_key:
+            is_available = True
+        else:
+            # 其次检查用户个人配置
+            is_available = api_settings_crud.is_provider_available(db, user_id, provider)
+
         for model in models:
             if is_available:
                 available.append(model)
             else:
                 unavailable.append(model)
+
     return {
         "available": available,
         "unavailable": unavailable,

@@ -96,7 +96,25 @@ export default function BankDetailPage() {
   const [addingPointForDomain, setAddingPointForDomain] = useState<string | null>(null)
   const [newPointName, setNewPointName] = useState('')
 
+  // LLM 可用性检查（AI 出题功能）
+  const [llmAvailable, setLlmAvailable] = useState(false)
+
   useEffect(() => { if (bankId) { loadAll(); loadPapers() } }, [bankId])
+
+  // 启动时检查 LLM 是否可用
+  useEffect(() => {
+    (async () => {
+      try {
+        const res = await fetch('/api/v1/api-settings/available/models', {
+          headers: { 'Authorization': `Bearer ${localStorage.getItem('access_token')}` },
+        })
+        if (res.ok) {
+          const data = await res.json()
+          setLlmAvailable(data.available?.length > 0)
+        }
+      } catch { /* 忽略 */ }
+    })()
+  }, [])
 
   const loadPapers = async () => {
     if (!bankId) return
@@ -577,6 +595,7 @@ export default function BankDetailPage() {
           bankId={bankId!}
           onClose={() => setShowExamCreator(false)}
           onCreated={() => { setShowExamCreator(false); loadPapers() }}
+          llmAvailable={llmAvailable}
         />
       )}
 
@@ -591,6 +610,7 @@ export default function BankDetailPage() {
           bankId={bankId!} editQuestion={editQuestion}
           onClose={() => { setShowEditor(false); setEditQuestion(null) }}
           onSaved={() => { setShowEditor(false); setEditQuestion(null); loadAll() }}
+          llmAvailable={llmAvailable}
         />
       )}
 
@@ -703,8 +723,8 @@ function QuestionDetailModal({ question: q, onClose }: { question: QuestionItem;
    ════════════════════════════════════════════════ */
 const ALL_Q_TYPES: QuestionType[] = ['single_choice', 'multiple_choice', 'fill_blank', 'true_false', 'short_answer', 'programming', 'essay']
 
-function QuestionEditorModal({ bankId, editQuestion, onClose, onSaved }: {
-  bankId: string; editQuestion: QuestionItem | null; onClose: () => void; onSaved: () => void
+function QuestionEditorModal({ bankId, editQuestion, onClose, onSaved, llmAvailable }: {
+  bankId: string; editQuestion: QuestionItem | null; onClose: () => void; onSaved: () => void; llmAvailable: boolean
 }) {
   const isEditing = !!editQuestion
   const [tab, setTab] = useState<'manual' | 'ai'>(isEditing ? 'manual' : 'manual')
@@ -841,7 +861,7 @@ function QuestionEditorModal({ bankId, editQuestion, onClose, onSaved }: {
         {!isEditing && (
           <div style={{ display: 'flex', gap: '4px', marginBottom: '20px', background: 'var(--app-bg-page)', borderRadius: 10, padding: '3px' }}>
             <button onClick={() => setTab('manual')} style={{ flex: 1, padding: '8px', borderRadius: 8, border: 'none', fontSize: '13px', cursor: 'pointer', background: tab === 'manual' ? '#fff' : 'transparent', color: tab === 'manual' ? 'var(--app-brand)' : 'var(--app-text-secondary)', fontWeight: 500 }}>手动创建</button>
-            <button onClick={() => setTab('ai')} style={{ flex: 1, padding: '8px', borderRadius: 8, border: 'none', fontSize: '13px', cursor: 'pointer', background: tab === 'ai' ? '#fff' : 'transparent', color: tab === 'ai' ? 'var(--app-info)' : 'var(--app-text-secondary)', fontWeight: 500 }}><BotIcon size={14} color="#0284C7" /> AI 生成</button>
+            <button onClick={() => setTab('ai')} style={{ flex: 1, padding: '8px', borderRadius: 8, border: 'none', fontSize: '13px', cursor: llmAvailable ? 'pointer' : 'not-allowed', background: tab === 'ai' ? '#fff' : 'transparent', color: llmAvailable ? (tab === 'ai' ? 'var(--app-info)' : 'var(--app-text-secondary)') : 'var(--app-text-muted)', fontWeight: 500, opacity: llmAvailable ? 1 : 0.5 }}><BotIcon size={14} color={llmAvailable ? '#0284C7' : '#9CA3AF'} /> AI 生成</button>
           </div>
         )}
 
@@ -938,7 +958,21 @@ function QuestionEditorModal({ bankId, editQuestion, onClose, onSaved }: {
               {saving ? '保存中...' : editQuestion ? '更新题目' : '创建题目'}
             </button>
           </div>
+        ) : !llmAvailable ? (
+          /* AI 不可用时显示配置引导 */
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px', padding: '32px 20px', textAlign: 'center' }}>
+            <BotIcon size={40} color="#9CA3AF" />
+            <div style={{ fontSize: '15px', fontWeight: 600, color: 'var(--app-text-heading)' }}>AI 出题功能暂不可用</div>
+            <div style={{ fontSize: '13px', color: 'var(--app-text-muted)', lineHeight: 1.7, maxWidth: 360 }}>
+              请先在「设置」中配置 DeepSeek 或 Qwen API Key，即可使用 AI 自动生成题目。
+            </div>
+            <button onClick={() => window.open('/settings', '_blank')}
+              style={{ padding: '10px 24px', background: 'var(--app-info)', color: '#fff', border: 'none', borderRadius: 10, fontSize: '14px', fontWeight: 500, cursor: 'pointer' }}>
+              前往配置 API
+            </button>
+          </div>
         ) : (
+          /* AI 生成表单 */
           <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
             {/* 题型多选 */}
             <div>
@@ -1055,8 +1089,8 @@ function QuestionEditorModal({ bankId, editQuestion, onClose, onSaved }: {
    ════════════════════════════════════════════════ */
 const ALL_QTYPES = ['single_choice', 'multiple_choice', 'fill_blank', 'true_false', 'short_answer', 'programming', 'essay']
 
-function CreateExamPaperModal({ bankId, onClose, onCreated }: {
-  bankId: string; onClose: () => void; onCreated: () => void
+function CreateExamPaperModal({ bankId, onClose, onCreated, llmAvailable }: {
+  bankId: string; onClose: () => void; onCreated: () => void; llmAvailable: boolean
 }) {
   const navigate = useNavigate()
   const [title, setTitle] = useState('')
@@ -1289,7 +1323,7 @@ function CreateExamPaperModal({ bankId, onClose, onCreated }: {
         <div style={{ display: 'flex', gap: '4px', marginBottom: '20px', background: 'var(--app-bg-page)', borderRadius: 10, padding: '3px' }}>
           <button onClick={() => setTab('manual')} style={{ flex: 1, padding: '8px', borderRadius: 8, border: 'none', fontSize: '13px', cursor: 'pointer', background: tab === 'manual' ? '#fff' : 'transparent', color: tab === 'manual' ? 'var(--app-brand)' : 'var(--app-text-secondary)', fontWeight: 500 }}>手动配置</button>
           <button onClick={() => setTab('upload')} style={{ flex: 1, padding: '8px', borderRadius: 8, border: 'none', fontSize: '13px', cursor: 'pointer', background: tab === 'upload' ? '#fff' : 'transparent', color: tab === 'upload' ? 'var(--app-brand)' : 'var(--app-text-secondary)', fontWeight: 500 }}>上传文件</button>
-          <button onClick={() => setTab('ai')} style={{ flex: 1, padding: '8px', borderRadius: 8, border: 'none', fontSize: '13px', cursor: 'pointer', background: tab === 'ai' ? '#fff' : 'transparent', color: tab === 'ai' ? 'var(--app-info)' : 'var(--app-text-secondary)', fontWeight: 500 }}><BotIcon size={14} color="#0284C7" /> AI 出题</button>
+          <button onClick={() => setTab('ai')} style={{ flex: 1, padding: '8px', borderRadius: 8, border: 'none', fontSize: '13px', cursor: llmAvailable ? 'pointer' : 'not-allowed', background: tab === 'ai' ? '#fff' : 'transparent', color: llmAvailable ? (tab === 'ai' ? 'var(--app-info)' : 'var(--app-text-secondary)') : 'var(--app-text-muted)', fontWeight: 500, opacity: llmAvailable ? 1 : 0.5 }}><BotIcon size={14} color={llmAvailable ? '#0284C7' : '#9CA3AF'} /> AI 出题</button>
         </div>
 
         {error && <div style={{ padding: '10px 14px', background: 'rgba(239,68,68,0.1)', borderRadius: 10, color: 'var(--app-danger)', fontSize: '13px', marginBottom: '16px' }}>{error}</div>}
@@ -1423,6 +1457,18 @@ function CreateExamPaperModal({ bankId, onClose, onCreated }: {
                 )}
               </div>
             )}
+          </div>
+        ) : !llmAvailable ? (
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px', padding: '32px 20px', textAlign: 'center' }}>
+            <BotIcon size={40} color="#9CA3AF" />
+            <div style={{ fontSize: '15px', fontWeight: 600, color: 'var(--app-text-heading)' }}>AI 出题功能暂不可用</div>
+            <div style={{ fontSize: '13px', color: 'var(--app-text-muted)', lineHeight: 1.7, maxWidth: 360 }}>
+              请先在「设置」中配置 DeepSeek 或 Qwen API Key，即可使用 AI 自动生成试卷题目。
+            </div>
+            <button onClick={() => window.open('/settings', '_blank')}
+              style={{ padding: '10px 24px', background: 'var(--app-info)', color: '#fff', border: 'none', borderRadius: 10, fontSize: '14px', fontWeight: 500, cursor: 'pointer' }}>
+              前往配置 API
+            </button>
           </div>
         ) : (
           <div>
